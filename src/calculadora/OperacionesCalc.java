@@ -55,6 +55,9 @@ public class OperacionesCalc {
          
     }
     
-}
-    
+     public String ErrorDivision() {
+        return "No puede dividir entre cero";
+    }
 
+}
+   

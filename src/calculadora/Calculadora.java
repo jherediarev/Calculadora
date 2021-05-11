@@ -76,7 +76,12 @@ public class Calculadora {
                 System.out.println("Resultado: " + op.Multiplicacion());
                 break;
             case 4:
-                System.out.println("Resultado: " + op.Division());
+                if (segNum == 0) {
+                    System.out.println("Resultado: " + op.ErrorDivision());
+                } else {
+                    System.out.println("Resultado: " + op.Division());
+                }
+                
                 break;
             default:    
             System.out.println("Elige un número de operación correcto:");   
